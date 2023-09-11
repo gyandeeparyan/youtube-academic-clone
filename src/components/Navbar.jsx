@@ -13,7 +13,7 @@ const Navbar = () => {
 
   return (
     <>
-      <div className='flex justify-between bg-black mt-2'>
+      <div className='flex justify-between bg-brand-coal mt-2'>
         <div className='flex '>
           <div className=" ml-7 px-3 py-1 mt-[3px]  rounded-full">
           <Menu

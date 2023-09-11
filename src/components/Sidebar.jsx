@@ -47,7 +47,7 @@ const Sidebar = () => {
       <div className='flex  flex-col -ml-[20px]  font-bold mr-8'>
         {/* Make Links Dynamic */}
         <Link to={'/'}>
-        <div className=" className='flex  cursor-pointer m-3 px-4 py-2 rounded-lg justify-center  hover:bg-pink-300 bg-pink-100 text-md'">
+        <div className=" className='flex  cursor-pointer m-3 px-4 py-2 rounded-lg justify-center dark:bg-brand-pink  hover:bg-pink-300 bg-pink-100 text-md'">
         <HomeIcon/>
         </div>
         </Link>
@@ -57,7 +57,7 @@ const Sidebar = () => {
             <div
             onClick={() => handleSidebarItemClick(item)}
               key={item.label}
-              className='flex  cursor-pointer m-3 px-4 py-2 rounded-lg justify-center  hover:bg-pink-300 bg-pink-100 text-md'>
+              className='flex  cursor-pointer m-3 px-4 py-2 rounded-lg justify-center dark:bg-brand-pink  hover:bg-pink-300 bg-pink-100 text-md'>
               {item.icon}
             </div>
           );
@@ -73,7 +73,7 @@ const Sidebar = () => {
             <div
             onClick={() => handleSidebarItemClick(item)}
               key={item.label}
-              className='flex cursor-pointer w-[210px] mt-2 mx-3 px-4 py-2 rounded-lg hover:bg-pink-300 bg-pink-100 text-md'>
+              className='flex cursor-pointer w-[210px] mt-2 mx-3 px-4 py-2  dark:bg-brand-pink  rounded-lg hover:bg-pink-300 bg-pink-100 text-md'>
               {item.icon}
               <p className='ml-6  px-2'>{item.label}</p>
             </div>

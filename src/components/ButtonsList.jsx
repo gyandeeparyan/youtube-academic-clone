@@ -39,7 +39,7 @@ const ButtonsList = () => {
     <div className='flex w-screen overflow-x-scroll scrollbar-hide'>
       {BUTTON_LIST.map((button) => (
         <div key={button} onClick={() => handleItemClick(button)}>
-          <p className="px-4 py-2 cursor-pointer mx-2 bg-blue-100 hover:bg-blue-300 rounded-md">{button}</p>
+          <p className="px-4 py-2 cursor-pointer mx-2 dark:bg-brand-blue  bg-blue-100 hover:bg-blue-300 rounded-md">{button}</p>
         </div>
       ))}
     </div>
