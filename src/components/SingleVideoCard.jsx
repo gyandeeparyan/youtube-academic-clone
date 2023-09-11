@@ -1,15 +1,11 @@
-// eslint-disable-next-line react/prop-types
-function SingleVideoCard({ info }) {
 
-const formatYouTubeViews=(views) =>{
-    if (views >= 1000000) {
-        return (views / 1000000).toFixed(1) + ' Mn';
-      } else if (views >= 1000) {
-        return (views / 1000).toFixed(1) + ' K';
-      } else {
-        return views.toString();
-      }
-}  
+import { formatYouTubeViews } from './../utils/helper';
+
+const SingleVideoCard =({ info }) =>{
+
+
+    
+  
 
 const formattedViews = formatYouTubeViews(info?.statistics?.viewCount);
 
@@ -21,15 +17,15 @@ const formattedViews = formatYouTubeViews(info?.statistics?.viewCount);
         className='h-[150px]  rounded-xl object-cover'
       />
       <div className='py-4'>
-        <h1 className='text-md font-semibold'>{info?.snippet?.title}</h1>
-        <p className='mt-1 text-sm text-gray-600'>
+        <h1 className='text-md dark:text-stone-200 font-semibold'>{info?.snippet?.title}</h1>
+        <p className='mt-1 dark:text-stone-300 text-sm text-gray-600'>
           {info?.snippet?.channelTitle}{" "}
         </p>
         <div className='flex'>
-          <p className='text-sm text-gray-600'>
+          <p className='text-sm dark:text-stone-400 text-gray-600'>
            {formattedViews} Views{" "}
           </p>
-          <p className='text-sm mx-4 text-gray-600'>
+          <p className='text-sm mx-4 dark:text-stone-400 text-gray-600'>
             {info?.snippet?.channelTitle}{" "}
           </p>
         </div>

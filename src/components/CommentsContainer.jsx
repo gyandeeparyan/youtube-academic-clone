@@ -4,7 +4,7 @@ import { COMMENTS } from './../Data/Comments';
 const CommentsContainer = () => {
   return (
     <>
-    <div>
+    <div className="mt-5">
        <CommentsList comments ={COMMENTS} />
     </div>
     </>
