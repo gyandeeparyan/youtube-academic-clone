@@ -5,7 +5,10 @@ const videoSlice = createSlice({
     name:"video",
     initialState:{
     videoData:{},
-    videoList:[]
+    videoList:[],
+    videoDetails:{},
+    currentVideoId:"",
+   
     },
 
     reducers:{
@@ -13,10 +16,17 @@ const videoSlice = createSlice({
           state.videoData=payload
           state.videoList=payload?.items
         },
+        addVideoId:(state,{payload})=>{
+          state.currentVideoId=payload
+        },
+        addSuggestedVideos:(state,{payload})=>{
+         
+          state.suggestedVideosList=payload?.items
+        },
 
     }
 })
 
-export const {addVideos} =videoSlice.actions
+export const {addVideos , addVideoId ,addSuggestedVideos} =videoSlice.actions
 
 export default videoSlice.reducer

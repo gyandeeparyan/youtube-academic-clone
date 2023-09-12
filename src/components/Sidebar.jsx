@@ -44,7 +44,8 @@ const Sidebar = () => {
 
   if (!isMenuOpen)
     return (
-      <div className='flex  flex-col -ml-[20px]  font-bold mr-8'>
+  <>
+      <div className='  flex overflow-x-scroll scrollbar-hidden w-screen md:w-[80px]  fixed md:hidden -ml-[36px] top-[700px]  dark:bg-brand-charcoal-muted  rounded-lg font-bold mr-8'>
         {/* Make Links Dynamic */}
         <Link to={'/'}>
         <div className=" className='flex  cursor-pointer m-3 px-4 py-2 rounded-lg justify-center dark:bg-brand-pink  hover:bg-pink-300 bg-pink-100 text-md'">
@@ -57,23 +58,45 @@ const Sidebar = () => {
             <div
             onClick={() => handleSidebarItemClick(item)}
               key={item.label}
-              className='flex  cursor-pointer m-3 px-4 py-2 rounded-lg justify-center dark:bg-brand-pink  hover:bg-pink-300 bg-pink-100 text-md'>
+              className='flex  cursor-pointer m-3 px-4 py-2 rounded-lg justify-center  dark:text-stone-800 dark:bg-brand-pink  hover:bg-pink-300 bg-pink-100 text-md'>
               {item.icon}
             </div>
           );
         })}
       </div>
+
+      {/* Desktop Button Sidesbar */}
+      <div className='md:flex   w-screen md:w-[80px]  hidden  md:flex-col -ml-[26px]   md:top-[60px]  rounded-lg font-bold mr-8'>
+        {/* Make Links Dynamic */}
+        <Link to={'/'}>
+        <div className=" className='flex  cursor-pointer m-3 px-4 py-2 rounded-lg justify-center dark:bg-brand-pink  hover:bg-pink-300 bg-pink-100 text-md'">
+        <HomeIcon/>
+        </div>
+        </Link>
+        
+        {sidebar.map((item) => {
+          return (
+            <div
+            onClick={() => handleSidebarItemClick(item)}
+              key={item.label}
+              className='flex  cursor-pointer m-3 px-4 py-2 rounded-lg justify-center  dark:text-stone-800 dark:bg-brand-pink  hover:bg-pink-300 bg-pink-100 text-md'>
+              {item.icon}
+            </div>
+          );
+        })}
+      </div>
+      </>
     );
   return (
     <>
-      <div className='flex hidden md:block flex-col ml-2 font-bold mr-8'>
+      <div className=' sm:hidden hidden md:block flex-col ml-2 font-bold mr-8'>
         {/* Make Links Dynamic */}
         {sidebar.map((item) => {
           return (
             <div
             onClick={() => handleSidebarItemClick(item)}
               key={item.label}
-              className='flex cursor-pointer w-[210px] mt-2 mx-3 px-4 py-2  dark:bg-brand-pink  rounded-lg hover:bg-pink-300 bg-pink-100 text-md'>
+              className='flex cursor-pointer w-[210px] mt-2 mx-3 px-4 py-2   dark:text-stone-800 dark:bg-brand-pink  rounded-lg hover:bg-pink-300 bg-pink-100 text-md'>
               {item.icon}
               <p className='ml-6  px-2'>{item.label}</p>
             </div>

@@ -13,9 +13,9 @@ const Navbar = () => {
 
   return (
     <>
-      <div className='flex justify-between bg-brand-coal mt-2'>
+      <div className='flex sticky justify-between dark:bg-brand-coal mt-4 md:mt-2'>
         <div className='flex '>
-          <div className=" ml-7 px-3 py-1 mt-[3px]  rounded-full">
+          <div className=" md:ml-7 px-3 py-1 mt-[3px]  rounded-full">
           <Menu
             className=' dark:text-stone-400  cursor-pointer'
             onClick={handleMenuToggle}
@@ -34,7 +34,7 @@ const Navbar = () => {
         <div>
           <SearchBar />
         </div>
-        <div className='p-2  hidden md:block mr-2 border-[2px] rounded-full'>
+        <div className='p-2  hidden md:block mr-2 border-[2px] dark:text-white rounded-full'>
           <UserCircle2 />
         </div>
       </div>

@@ -1,17 +1,19 @@
 import { useEffect } from "react";
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 import { closeMenu } from "../utils/appSlice";
 import { useSearchParams } from "react-router-dom";
 import CommentsContainer from "./CommentsContainer";
 import LiveChat from "./LiveChat";
 import SugggestedVideoConatiner from "./SugggestedVideoConatiner";
+import { addVideoId } from "../utils/videoSlice";
 
 const VideoWatchPage = () => {
   const dispatch = useDispatch();
   const [searchParams] = useSearchParams();
-
+  const videos=useSelector((store)=>store.video.videoList)
   useEffect(() => {
     dispatch(closeMenu());
+    dispatch(addVideoId( searchParams.get("v")))
   }, []);
 
   return (
@@ -29,11 +31,11 @@ const VideoWatchPage = () => {
               allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share'
               allowFullscreen></iframe>
           </div>
-          <div className="md:hidden">
+          <div className="md:hidden w-screen">
             <iframe
-              className='rounded-lg'
+              className=' w-screen -ml-[35px]'
               width='360'
-              height='200'
+              height='250'
               src={"https://www.youtube.com/embed/" + searchParams.get("v")}
               title='YouTube video player'
               frameBorder='0'

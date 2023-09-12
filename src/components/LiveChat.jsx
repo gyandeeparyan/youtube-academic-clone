@@ -54,13 +54,13 @@ if(isMenuOpen) return null
             setLiveMessage("");
           }}>
           <input
-            className='border-[2px] text-sm px-4 py-1 w-[320px] border-stone-300 rounded-lg'
+            className='border-[2px] text-sm px-4 py-1 w-[320px] dark:text-brand-white  dark:bg-stone-800 dark:border-stone-500 border-stone-300 rounded-lg'
             type='text'
             placeholder='Chat...'
             value={liveMessage}
             onChange={(e) => {setLiveMessage(e.target.value)}}
           />
-          <button className=' mx-2 text-stone-700 '>
+          <button className=' mx-2 text-stone-700  dark:text-stone-200'>
             <SendHorizonal />
           </button>
         </form>

@@ -2,16 +2,23 @@ export const YOUTUBE_API_URL="https://youtube.googleapis.com/youtube/v3/videos?p
 
 export const YOUTUBE_SEARCH_API_URL ="https://youtube-data8.p.rapidapi.com/auto-complete/?q=";
 
+
+
+
 export const OPTIONS = {
 	method: 'GET',
 	headers: {
-		'X-RapidAPI-Key': 'a722c260famshd1e0217900ba4b5p10d517jsn42b3438f1549',
+		'X-RapidAPI-Key': import.meta.env.VITE_RAPID_API_KEY ,
 		'X-RapidAPI-Host': 'youtube-data8.p.rapidapi.com'
 	}
 };
 
 
+
 export const YOUTUBE_SEARCH_VIDEO_LIST =  'https://youtube.googleapis.com/youtube/v3/search?part=snippet&maxResults=50&q=' 
+
+export const SUGGESTED_VIDEO_URL ='https://youtube-v31.p.rapidapi.com/search?relatedToVideoId='
+
 
 export const LIVE_CHAT_COUNT = 50;
 

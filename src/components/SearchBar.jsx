@@ -74,7 +74,7 @@ const SearchBar = () => {
         setSuggestions(cache[searchText]);
         console.log("Caching Successfully done .!");
       } else {
-        // getSearchSuggestions();
+      getSearchSuggestions();
       }
     }, 200);
 
@@ -127,7 +127,7 @@ const SearchBar = () => {
         <input
           className='border-[2px] 
           dark: bg-stone-800 dark:border-stone-500 dark:text-stone-200
-          px-2 w-[220px] md:px-4 md:w-[350px] rounded-3xl md:rounded-l-full'
+          px-2 w-[250px] md:px-4 md:w-[350px] text-sm rounded-3xl md:rounded-l-full'
           value={searchText}
           onChange={(e) => {
             setSearchText(e.target.value);
@@ -141,20 +141,20 @@ const SearchBar = () => {
           onClick={() => {
             dispatch(addVideos(videosData));
           }}
-          className='py-2 px-2 ml-2 md:ml-0 md:px-4 border-[2px] bg-gray-100 dark:bg-stone-800 dark:border-stone-500 dark:text-stone-200 rounded-3xl md:rounded-r-full '>
+          className='md:py-2 py-1 px-2 ml-2 md:ml-0 md:px-4 border-[2px] cursor-pointer bg-gray-100 dark:bg-stone-800 dark:border-stone-500 dark:text-stone-200 rounded-3xl md:rounded-r-full '>
           <Search />
         
         </div>
 
         <div
           onClick={handleSpeechInput}
-          className={`p-2 dark: text-stone-200  ml-2 mr-2 md:ml-4 rounded-full ${isListening?"bg-red-200 border-red-200 dark:to-brand-red dark:border-brand-red":"bg-green-200 dark:bg-brand-green dark:border-brand-green border-green-200"} border-[2px] `}>
+          className={`p-2 dark:text-stone-200 cursor-pointer  ml-2 mr-2 md:ml-4 rounded-full ${isListening?"bg-red-200 border-red-200 dark:bg-brand-red dark:border-brand-red":"bg-green-200 dark:bg-brand-green dark:border-brand-green border-green-200"} border-[2px] `}>
           {isListening ? <StopCircle /> : <Mic />}
         </div>
       </div>
 
       {showSuggestion && (
-        <div className='fixed shadow-lg  bg-white mt-5  w-[350px] rounded-lg'>
+        <div className='fixed shadow-lg  bg-white dark:bg-stone-800 dark:text-stone-200 mt-5 w-[250] md:w-[350px] rounded-lg'>
           {suggstions?.map((suggestion) => {
             return (
               <div
@@ -163,8 +163,8 @@ const SearchBar = () => {
                   setSearchText(suggestion);
                   dispatch(addVideos(videosData));
                 }}
-                className=' px-2 hover:bg-gray-100 rounded-lg font-semibold py-1 m-2'>
-                <Search className='inline mr-4 text-gray-600' />
+                className=' px-2 hover:bg-gray-100 dark:bg-stone-600 rounded-lg font-semibold py-1 m-2'>
+                <Search className='inline mr-4 text-gray-600 dark:text-stone-200' />
                 {suggestion}
               </div>
             );

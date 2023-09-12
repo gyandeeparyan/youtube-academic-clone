@@ -14,7 +14,7 @@ const SingleSuggestedVideoCard = ({ info }) => {
         <img className="w-[180px] rounded-lg" src={info?.snippet?.thumbnails?.medium?.url} alt='thumbnail' />
       </div>
 
-      <div className='flex w-[200px] mt-3 flex-col'>
+      <div className='flex w-[200px] mt-3 flex-col dark:text-stone-200'>
         <p className="text-sm m-2 line-clamp-2 font-bold">{info?.snippet?.title}</p>
         <p className="text-sm mx-2 font-semi-bold">{info?.snippet?.channelTitle}</p>
         
