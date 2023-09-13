@@ -5,10 +5,10 @@ import "./index.css";
 import Navbar from "./components/Navbar";
 import BodyContainer from "./components/BodyContainer";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
-import Body from "./components/Body";
+import { Suspense,lazy } from "react";
 import VideoContainer from "./components/VideoContainer";
-import VideoWatchPage from "./components/VideoWatchPage";
-
+import Error from "./components/Error";
+const VideoWatchPage = lazy(() => import("./components/VideoWatchPage"));
 const appRouter = createBrowserRouter([
   {
     path: "/",
@@ -20,7 +20,12 @@ const appRouter = createBrowserRouter([
       },
       {
         path: "watch",
-        element: <VideoWatchPage />,
+        element:
+        (
+          <Suspense fallback={<Error />}>
+<VideoWatchPage />
+          </Suspense>
+        ) 
       },
     ],
   },
