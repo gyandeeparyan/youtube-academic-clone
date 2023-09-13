@@ -154,7 +154,7 @@ const SearchBar = () => {
       </div>
 
       {showSuggestion && (
-        <div className='fixed shadow-lg  bg-white dark:bg-transparent dark:text-stone-200 mt-5 w-[250] md:w-[350px] rounded-lg'>
+        <div className='fixed shadow-lg  bg-white dark:bg-stone-800 dark:text-stone-200 mt-5 w-[250] md:w-[350px] rounded-lg'>
           {suggstions?.map((suggestion) => {
             return (
               <div
@@ -163,7 +163,7 @@ const SearchBar = () => {
                   setSearchText(suggestion);
                   dispatch(addVideos(videosData));
                 }}
-                className=' px-2 hover:bg-gray-100 dark:bg-stone-600 rounded-lg font-semibold py-1 m-2'>
+                className=' px-2 hover:bg-gray-100 dark:hover:bg-gray-500 rounded-lg font-semibold py-1 m-2'>
                 <Search className='inline mr-4 text-gray-600 dark:text-stone-200' />
                 {suggestion}
               </div>
