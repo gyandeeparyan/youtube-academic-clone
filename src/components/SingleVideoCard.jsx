@@ -14,7 +14,7 @@ const formattedViews = formatYouTubeViews(info?.statistics?.viewCount);
       <img
         src={info?.snippet?.thumbnails?.medium?.url}
         alt='Laptop'
-        className='md:h-[150px] md:w-full w-screen md:rounded-xl object-cover'
+        className='md:h-[180px] md:w-full w-screen md:rounded-xl object-cover'
       />
       <div className='py-4 ml-2'>
         <h1 className='text-md dark:text-stone-200 font-semibold'>{info?.snippet?.title}</h1>

@@ -23,7 +23,7 @@ const Navbar = () => {
           </div>
           
           <a href='/'>
-          <div className='p-2  hidden md:block ml-3 mr-2 border-brand-red border-[2px] dark:text-brand-red rounded-full'>
+          <div className='p-2  hidden md:block ml-6 mr-2 text-brand-red border-brand-red border-[2px] dark:text-brand-red rounded-full'>
           <PlayCircle className="" />
         </div>
         

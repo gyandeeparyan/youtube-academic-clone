@@ -125,8 +125,8 @@ const SearchBar = () => {
     <>
       <div className='flex'>
         <input
-          className='border-[2px] 
-          dark: bg-stone-800 dark:border-stone-500 dark:text-stone-200
+          className='
+          dark:bg-stone-800 bg-stone-100 dark:border-stone-500 dark:text-stone-200
           px-2 w-[250px] md:px-4 md:w-[350px] text-sm rounded-3xl md:rounded-l-full'
           value={searchText}
           onChange={(e) => {
@@ -141,7 +141,7 @@ const SearchBar = () => {
           onClick={() => {
             dispatch(addVideos(videosData));
           }}
-          className='md:py-2 py-1 px-2 ml-2 md:ml-0 md:px-4 border-[2px] cursor-pointer bg-gray-100 dark:bg-stone-800 dark:border-stone-500 dark:text-stone-200 rounded-3xl md:rounded-r-full '>
+          className='md:py-2 py-2 px-2 ml-2 md:ml-0 md:px-4  cursor-pointer bg-gray-100 dark:bg-stone-800 dark:border-stone-500 dark:text-stone-200 rounded-3xl md:rounded-r-full '>
           <Search />
         
         </div>
