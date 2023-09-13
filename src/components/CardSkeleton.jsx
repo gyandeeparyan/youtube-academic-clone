@@ -8,7 +8,7 @@ export function CardSkeleton() {
 Array(10)
 .fill("")
 .map((e, index) => (
-  <div key={index} className="w-[300px] rounded-2xl  mb-8">
+  <div key={index} className="w-[300px] animate-pulse rounded-2xl  mb-8">
     <div
       className="h-[200px] w-full rounded-2xl object-cover  dark:bg-stone-700 bg-stone-300"
     ></div>

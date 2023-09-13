@@ -148,13 +148,13 @@ const SearchBar = () => {
 
         <div
           onClick={handleSpeechInput}
-          className={`p-2 dark:text-stone-200 cursor-pointer  ml-2 mr-2 md:ml-4 rounded-full ${isListening?"bg-red-200 border-red-200 dark:bg-brand-red dark:border-brand-red":"bg-green-200 dark:bg-brand-green dark:border-brand-green border-green-200"} border-[2px] `}>
+          className={`p-2 dark:text-stone-200  cursor-pointer  ml-2 mr-2 md:ml-4 rounded-full ${isListening?"bg-red-200 animate-pulse border-red-200 dark:bg-brand-red dark:border-brand-red":"bg-green-200 dark:bg-brand-green dark:border-brand-green border-green-200"} border-[2px] `}>
           {isListening ? <StopCircle /> : <Mic />}
         </div>
       </div>
 
       {showSuggestion && (
-        <div className='fixed shadow-lg  bg-white dark:bg-stone-800 dark:text-stone-200 mt-5 w-[250] md:w-[350px] rounded-lg'>
+        <div className='fixed shadow-lg  bg-white dark:bg-transparent dark:text-stone-200 mt-5 w-[250] md:w-[350px] rounded-lg'>
           {suggstions?.map((suggestion) => {
             return (
               <div

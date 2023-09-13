@@ -1,4 +1,4 @@
-import { Menu, UserCircle2 } from "lucide-react";
+import { Menu, PlayCircle, UserCircle2 } from "lucide-react";
 import SearchBar from "./SearchBar";
 import { useDispatch } from "react-redux";
 import { toggleMenu } from "../utils/appSlice";
@@ -23,11 +23,10 @@ const Navbar = () => {
           </div>
           
           <a href='/'>
-            <img
-              className='w-32 mt-1 hidden md:block h-7 ml-4'
-              src='https://logodownload.org/wp-content/uploads/2014/10/youtube-logo-1-3.png'
-              alt='logo'
-            />
+          <div className='p-2  hidden md:block ml-3 mr-2 border-brand-red border-[2px] dark:text-brand-red rounded-full'>
+          <PlayCircle className="" />
+        </div>
+        
           </a>
         </div>
 
