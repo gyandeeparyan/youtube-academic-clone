@@ -25,7 +25,7 @@ Our platform offers a powerful search bar that allows you to effortlessly discov
 <div align="center"> <img src="https://i.ibb.co/V3bnQSC/md-nested-comment.png" alt='image' width='800'/> </div>
 <div align="center"> <img src="https://i.ibb.co/Jyt0XYc/md-search-suggestions.png" alt='image' width='800'/> </div>
 <div align="center"> <img src="https://i.ibb.co/8PPcYhm/md-sidebar-open.png" alt='image' width='800'/> </div>
-<div >
+
 <div align="center"> <img src="https://i.ibb.co/QJfDqQt/md-watch.png" alt='image' width='800'/> </div>
 <div >
 
