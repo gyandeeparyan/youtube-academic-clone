@@ -2,7 +2,7 @@ import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 
 import "./index.css";
-import Navbar from "./components/Navbar";
+
 import BodyContainer from "./components/BodyContainer";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import { Suspense,lazy } from "react";
@@ -34,7 +34,7 @@ const appRouter = createBrowserRouter([
 function App() {
   return (
     <>
-         <Navbar />
+        
       <RouterProvider router={appRouter} />
     </>
   );

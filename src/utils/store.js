@@ -9,6 +9,7 @@ reducer:{
     search: searchSlice,
     chat: liveChatSlice,
     video: videoSlice,
+    
 } 
 })
 
