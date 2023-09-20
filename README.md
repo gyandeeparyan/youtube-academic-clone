@@ -7,7 +7,7 @@
 
 Our platform offers a powerful search bar that allows you to effortlessly discover content that resonates</p>
 
-<h4>  · </span> <a href="https://github.com/gyandeeparyan/netflix-gpt/blob/master/README.md"> Documentation  <span> · </span> <a href="https://github.com/gyandeeparyan/netflix-gpt/issues"> Report Bug  <span> · </span> <a href="https://github.com/gyandeeparyan/netflix-gpt/issues"> Request Feature  </h4>
+<h4>  · </span> <a href="https://github.com/gyandeeparyan/youtube-academic-clone/blob/master/README.md"> Documentation  <span> · </span> <a href="https://github.com/gyandeeparyan/youtube-academic-clone/issues"> Report Bug  <span> · </span> <a href="https://github.com/gyandeeparyan/youtube-academic-clone/issues"> Request Feature  </h4>
 
 </div>
 
@@ -101,7 +101,7 @@ npm run dev
 
 ## :wave: Contributing
 
-<a href="https://github.com/gyandeeparyan/netflix-gpt/graphs/contributors"> <img src="https://contrib.rocks/image?repo=Louis3797/awesome-readme-template" /> 
+<a href="https://github.com/gyandeeparyan/youtube-academic-clone/graphs/contributors"> <img src="https://contrib.rocks/image?repo=Louis3797/awesome-readme-template" /> 
 
 Contributions are always welcome!
 
@@ -109,10 +109,10 @@ see `contributing.md` for ways to get started
 
 ### :scroll: Code of Conduct
 
-Please read the [Code of Conduct](https://github.com/gyandeeparyan/netflix-gpt/blob/master/CODE_OF_CONDUCT.md)
+Please read the [Code of Conduct](https://github.com/gyandeeparyan/youtube-academic-clone/blob/master/CODE_OF_CONDUCT.md)
 
 ## :handshake: Contact
 
 Gyandeep Aryan - - gyandeeparyan.dev@gmail.com
 
-Project Link: [https://github.com/gyandeeparyan/netflix-gpt](https://github.com/gyandeeparyan/netflix-gpt)
+Project Link: [https://github.com/gyandeeparyan/netflix-gpt](https://github.com/gyandeeparyan/youtube-academic-clone)
