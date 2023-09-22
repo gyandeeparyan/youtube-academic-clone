@@ -7,7 +7,8 @@
 
 Our platform offers a powerful search bar that allows you to effortlessly discover content that resonates</p>
 
-<h4>  · </span> <a href="https://github.com/gyandeeparyan/youtube-academic-clone/blob/master/README.md"> Documentation  <span>  · </span> <a href="https://docs.google.com/document/d/1LNIlYsmZnVdtwACAjhrF_ZVamiXKf7QSapHB9f7D_uE/edit?usp=sharing"> High Level Design  <span> · </span> <a href="https://github.com/gyandeeparyan/youtube-academic-clone/issues"> Report Bug  <span> · </span> <a href="https://github.com/gyandeeparyan/youtube-academic-clone/issues"> Request Feature  </h4>
+
+<h4>  · </span> <a href="https://github.com/gyandeeparyan/youtube-academic-clone/blob/master/README.md"> Documentation  <span>  · </span> <a href="https://docs.google.com/document/d/1LNIlYsmZnVdtwACAjhrF_ZVamiXKf7QSapHB9f7D_uE/edit?usp=sharing"> High Level Design  <span>  · </span> <a href="https://docs.google.com/document/d/1KWpWAj4RrVw56awr63spwuaX5BPov7l5fipWGJMDFHM/edit?usp=sharing"> Low Level Design  <span> · </span> <a href="https://github.com/gyandeeparyan/youtube-academic-clone/issues"> Report Bug  <span> · </span> <a href="https://github.com/gyandeeparyan/youtube-academic-clone/issues"> Request Feature  </h4>
 
 </div>
 
